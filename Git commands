@@ -1,0 +1,36 @@
+----------------
+* GIT commands *
+----------------
+
+git clone https://github.com/user/git-repo.git
+
+git checkout branch_name
+git fetch
+git pull origin
+
+git add .
+git commit -m"commit message"
+git push
+
+Undoing added changes
+---------------------
+
+git add .
+
+git stash
+
+Undoing last commit (that has not been pushed)
+---------------------------------------------
+
+git add .
+git commit -m"commit message"
+
+git reset --soft HEAD~
+
+Undoing a Specific Commit (That Has Been Pushed)
+------------------------------------------------
+
+git log --oneline
+git revert 1a8ae86 --no-edit
+git push
+
